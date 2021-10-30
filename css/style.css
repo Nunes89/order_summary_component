@@ -1,3 +1,169 @@
+:root {
+  --primary-Pale-blue: hsl(225, 100%, 94%);
+  --primary-Bright-blue: hsl(245, 75%, 52%);
+  --secondary-Very-pale-blue: hsl(225, 100%, 98%);
+  --secondary-Desaturated-blue: hsl(224, 23%, 55%);
+  --secondary-Dark-blue: hsl(223, 47%, 23%);
+  --hover-effect: hsl(245, 83%, 68%);
+  --card-shadow-color: hsl(227, 72%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-Pale-blue) url(../images/pattern-background-mobile.svg) no-repeat center top;
+  background-size: contain;
+}
+
+.card {
+  width: 90vw;
+  max-width: 337px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  margin-bottom: 10px;
+  box-shadow: 0px 10px 15px 0px var(--card-shadow-color);
+  font-size: 0.8rem
+}
+
+.card>.card-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+}
+
+.card-body {
+  text-align: center;
+  padding: 7vw 5vw;
+}
+
+.card-body>.card-title {
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--secondary-Dark-blue);
+}
+
+.card-body>.card-text {
+  color: var(--secondary-Desaturated-blue);
+  font-weight: 700;
+  max-width: 90%;
+  margin: 0 auto 24px auto;
+}
+
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-Very-pale-blue);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.plans>.plans-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plans-content .plans-icon {
+  height: 56px;
+  width: 56px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans-icon>.icon {
+  width: 100%;
+  height: 100%;
+  background: url("../images/icon-music.svg") no-repeat center center;
+  background-size: cover;
+}
+
+.plans .plans-title {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--secondary-Dark-blue);
+  margin-bottom: 4px;
+}
+
+.plans .plans-price {
+  color: var(--secondary-Desaturated-blue);
+  font-weight: 700;
+}
+
+.plans .plans-link {
+  font-weight: 900;
+  color: var(--primary-Bright-blue);
+}
+
+.plans .plans-link:hover {
+  color: var(--hover-effect);
+  text-decoration: none;
+}
+
+.card-buttons {
+  width: 100%;
+}
+
+.card-buttons>.card-button {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  padding: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.card-button.payment {
+  color: var(--secondary-Very-pale-blue);
+  background: var(--primary-Bright-blue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 15px 10px -2px var(--primary-Pale-blue), 0 20px 15px -2px var(--primary-Pale-blue);
+}
+
+.card-button.payment:hover {
+  background: var(--hover-effect);
+}
+
+.card-button.cancel {
+  color: var(--secondary-Desaturated-blue);
+}
+
+.card-button.cancel:hover {
+  color: var(--secondary-Dark-blue);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
